@@ -15,7 +15,7 @@ composer install
 require 'path/to/shc-fhir.php';
 
 $first = [
-    'type' => 'immunization',
+    'type' => 'Immunization',
     'date' => '2021-12-01',
     'cvx' => '207',
     'lot' => 'FK1234'
