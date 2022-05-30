@@ -14,16 +14,17 @@ composer install
 ```php
 require 'path/to/shc-fhir.php';
 
+// example of Pfizer-BioNTech vaccine. 
 $first = [
     'type' => 'Immunization',
     'date' => '2021-12-01',
-    'cvx' => '207',
+    'cvx' => '208',
     'lot' => 'FK1234'
 ];
 
 // $second is same format as $first
 
 // middle name is not required
-$SHC = new SHC('lastname', 'middlename firstname', '1970-01-01', [$first, $second]);
+$SHC = new SHC('Appleseed', 'John A.', '1970-01-01', [$first, $second]);
 echo '<img src="'.$SHC->genshc().'">';
 ```
