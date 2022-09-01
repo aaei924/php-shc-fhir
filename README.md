@@ -11,6 +11,28 @@ OR can use this command.
 composer install
 ```
 
+You should set or check some values before using.
+
+Check directory of vendor/autoload.php
+```php
+require './vendor/autoload.php';
+```
+
+Set d, x, y, kid values.
+```php
+// ... line 119
+        $this->key = [
+            'alg' => 'ES256',
+            'crv' => 'P-256',
+            'd' => 'your D',
+            'kty' => 'EC',
+            'use' => 'sig',
+            'x' => 'your X',
+            'y' => 'your Y'
+            'kid' => 'your kid'
+        ];
+```
+
 ```php
 require 'path/to/shc-fhir.php';
 
